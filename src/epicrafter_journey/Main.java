@@ -30,5 +30,8 @@ public class Main {
         for(String motCle : motsCles) {
             System.out.println(motCle);
         }
+        
+        Kit starterKit = new Kit();
+        starterKit.showKit();
     }
 }
