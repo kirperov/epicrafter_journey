@@ -1,7 +1,9 @@
 package epicrafter_journey;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
@@ -19,5 +21,14 @@ public class Main {
         }
 
         blocksUsedQuantity.remove(Integer.valueOf(3));
+        
+        Set<String> motsCles = new LinkedHashSet<String>();
+        motsCles .add("Cabane");
+        motsCles .add("Cabane");
+        motsCles .add("Muraille"); //duplicate not allowed
+        
+        for(String motCle : motsCles) {
+            System.out.println(motCle);
+        }
     }
 }
